@@ -1,7 +1,7 @@
 *** Settings ***
 Resource  ../Resources/PageObjects/LandingPage.robot
-#Resource  ../Resources/PageObjects/TopNav.robot
-#Resource  ../Resources/PageObjects/SearchResult.robot
+Resource  ../Resources/PageObjects/TopNavigationBar.robot
+Resource  ../Resources/PageObjects/SearchResult.robot
 #Resource  ../Resources/PageObjects/Product.robot
 #Resource  ../Resources/PageObjects/BuyingChoices.robot
 #Resource  ../Resources/PageObjects/Cart.robot
@@ -11,10 +11,10 @@ Resource  ../Resources/PageObjects/LandingPage.robot
 Search for Product
     LandingPage.Load
     LandingPage.Verify Page Loaded
-#    TopNav.Enter Search Key
-#    TopNav.Press Search Button
-#    SearchResult.Verify Page Loaded
-#
+    TopNavigationBar.Enter Search Key
+    TopNavigationBar.Press Search Button
+    SearchResult.Verify Page Loaded
+
 #Select Product from Search Results
 #    SearchResult.Select Product
 #    Product.Verify Page Loaded

@@ -5,9 +5,11 @@ Resource  ../Resources/CommonResources.robot
 Test Setup  CommonResources.Begin Web Test
 Test Teardown  CommonResources.End Web Test
 
+# pybot -d Results TestSuites\TestSuite001.robot
+
 *** Variables ***
 ${SEARCH TERM}  Isaac Asimov
-${LANDING PAGE}  https://www.adlibris.com/se
+${LANDING PAGE}  http://www.adlibris.se
 ${BROWSER}  chrome
 
 *** Test Cases ***
